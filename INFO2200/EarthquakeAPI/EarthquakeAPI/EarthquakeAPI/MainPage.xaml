@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EarthquakeAPI.MainPage">
+
+    <StackLayout>
+        <Label Text="Jacob's Earthquake Search"
+           HorizontalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalOptions="CenterAndExpand"
+           FontSize="30"/>
+        <Label Text="Earthquakes Between"
+           HorizontalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalOptions="CenterAndExpand"
+           FontSize="20"/>
+        <Label Text="Start Date"
+           HorizontalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalOptions="CenterAndExpand"/>
+        <Entry x:Name="EntryStartDate"
+               Placeholder="mm/dd/yyyy"
+               VerticalOptions="CenterAndExpand"
+               HorizontalTextAlignment="Center"
+               Margin="10"/>
+        <Label Text="End Date"
+           HorizontalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalOptions="CenterAndExpand"/>
+        <Entry x:Name="EntryEndDate"
+               Placeholder="mm/dd/yyyy"
+               VerticalOptions="CenterAndExpand"
+               HorizontalTextAlignment="Center"
+               Margin="10"/>
+        <Label Text="Earthquake Size"
+           HorizontalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalOptions="CenterAndExpand"/>
+        <Entry x:Name="EntrySize"
+               Placeholder="1-10"
+               VerticalOptions="CenterAndExpand"
+               HorizontalTextAlignment="Center"
+               Margin="10"/>
+        <Button x:Name="BtnFind"
+                VerticalOptions="CenterAndExpand"
+                Padding="30"
+                Text="Find"
+                Margin="10"
+                Clicked="BtnFind_Clicked"/>
+        <Label x:Name="LblResults"
+           Text="Results..."
+           HorizontalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalOptions="CenterAndExpand"/>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OpenWeather.MainPage">
+
+    <StackLayout>
+        <Label Text="Welcome to Jacob's Weather App!"
+           HorizontalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalOptions="CenterAndExpand"
+           FontSize="30"/>
+        <Picker x:Name="PckCity" HorizontalOptions="FillAndExpand">
+            <Picker.Items>
+                <x:String>Orem</x:String>
+                <x:String>Miami</x:String>
+                <x:String>Anchorage</x:String>
+            </Picker.Items>
+        </Picker>
+        <Entry x:Name="EntryGuess"
+               Placeholder="Guess Current Temp"
+               VerticalOptions="CenterAndExpand"
+               HorizontalTextAlignment="Center"
+               FontSize="25"
+               Margin="10"/>
+        <Button x:Name="BtnShowTemp"
+                VerticalOptions="CenterAndExpand"
+                Padding="30"
+                Text="Show Current Temp"
+                Margin="10"
+                Clicked="BtnShowTemp_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
